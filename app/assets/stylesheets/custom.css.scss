@@ -1,0 +1,100 @@
+@import "bootstrap";
+@import "font-awesome";
+
+/* helpers */
+
+.centertext {
+	text-align: center;
+}
+
+hr {
+  border: 1px solid #C0C0C0;
+
+	&.half-rule {
+		width: 100px;
+	  margin: 40px auto;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-bottom: 2px dotted gray;
+	border-radius: 0;
+	color: #C4C4C4;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #C4C4C4;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #C4C4C4;
+}
+
+body {
+	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #E6E6E6;
+}
+
+.jumbotron {
+	background: url('/images/rocket.jpg');
+	background-size: cover;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.hero-unit {
+	padding-top: 140px;
+  padding-bottom: 160px;
+  background-color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
+
+  & h1 {
+  	color: #C4C4C4;
+  	font-size: 48px;
+  }
+}
+
+.form {
+	border: 1px dotted #ccc;
+	border-radius: 5px;
+	margin-top: 90px;
+	margin-bottom: 45px;
+	background-color: #FFEDCC;
+	font-size: 14px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-control {
+	margin-bottom: 5px;
+}
+
+.input-group > div {
+	margin-bottom: 20px;
+}
+
+.input-group-addon {
+	min-width: 40px;
+
+	&.min-max {
+		min-width: 52px;
+	}
+}
+
+/* Footer */
+
+.footer {
+	height: 40px;
+	margin-top: 60px;
+	padding-top: 5px;
+	border-top: 1px dotted gray;
+	color: #999;
+}
+
+.footer p {
+	padding-top: 7px;
+	font-size: 12px;
+}
