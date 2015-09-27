@@ -8,7 +8,6 @@ gem 'pg'
 
 gem 'devise'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '~> 5.0'
