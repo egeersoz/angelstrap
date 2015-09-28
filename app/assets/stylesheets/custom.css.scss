@@ -7,6 +7,61 @@
 	text-align: center;
 }
 
+#mc_embed_signup {
+	clear: left;
+	font: 14px Helvetica,Arial,sans-serif;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.subscribe .col-sm-5 {
+	margin-top: 90px;
+}
+
+.number-of-subscribers {
+	padding-top: 25px;
+
+	& .number {
+		color: #1D75B7;
+	}
+}
+
+.picture {
+	border: 2px dotted lightgray;
+	border-radius: 5px;
+	height: 250px;
+	margin-top: 20px;
+	padding-top: 100px;
+}
+
+.step-by-step {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.step {
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.stepnumber {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 30px;
+	font-size: 18px;
+	color: white;
+	background: #1D75B7;
+	border-radius: 50%;
+}
+
+.stepdescription {
+	padding-top: 5px;
+	padding-left: 8px;
+}
+
 hr {
   border: 1px solid #C0C0C0;
 
@@ -34,6 +89,7 @@ hr {
 body {
 	font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #E6E6E6;
+	-webkit-font-smoothing: antialiased;
 }
 
 .jumbotron {

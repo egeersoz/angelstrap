@@ -3,7 +3,7 @@ provide :title, 'Welcome'
 div.jumbotron
   div.hero-unit
 	  div.container
-	    h1 Help early-stage startups
+	    h1 Help garage-stage startups
 	    h1 take off
 	    br
 	    a.btn.btn-lg.btn-primary href="#{new_user_registration_path}" Create Account
@@ -13,21 +13,66 @@ hr.half-rule
 h3.centertext Startup founders have a tough job.
 
 div.container
-  div class="section-title-black"
-    div class="row centertext"
-      div class="col-sm-4"
-	      h2
-	        span class="fa fa-smile-o fa-3x"
-	      p Ease their burden by investing in their tools and digital infrastructure.
+  div class="row centertext"
+    div class="col-sm-4"
+      h2
+        span class="fa fa-smile-o fa-3x"
+      p Ease their burden by investing in their tools and digital infrastructure.
 
-      div class="col-sm-4"
-        h2 
-          span class="fa fa-thumbs-up fa-3x"
-        p Win goodies and get first dibs on their products and services.
+    div class="col-sm-4"
+      h2 
+        span class="fa fa-thumbs-up fa-3x"
+      p Win goodies and get first dibs on their products and services.
 
-      div class="col-sm-4"
-        h2 
-          span class="fa fa-check-square-o fa-3x"
-        p Quick, easy, and safe.
+    div class="col-sm-4"
+      h2 
+        span class="fa fa-check-square-o fa-3x"
+      p Quick, easy, and safe.
 
 hr.half-rule
+
+h3.centertext How does it work?
+
+div.container.how-does-it-work
+  div.row
+    div.col-sm-offset-1.col-sm-5
+      div.step-by-step
+        div.step
+          div.stepnumber 1
+          div.stepdescription Founders create listings that describe their needs
+        div.step
+          div.stepnumber 2
+          div.stepdescription Angels pay for those services through Angelstrap
+        div.step
+          div.stepnumber 3
+          div.stepdescription Angelstrap signs up for the services on the founders' behalf
+    div.col-sm-offset-1.col-sm-5.picture.centertext
+      p Pictures
+
+hr.half-rule
+
+h3.centertext Interested?
+h4.centertext We haven't launched yet, but we can let you know when we do.
+
+div.container.subscribe
+  div.row
+    div.col-sm-5.col-sm-offset-1.form
+      div id="mc_embed_signup"
+        <form action="//angelstrap.us11.list-manage.com/subscribe/post?u=a6d951be52ca9178407f4b2aa&amp;id=951c0a650e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        .form-group
+          br
+          h4 Subscribe to our mailing list
+          .input-group
+            span.input-group-addon
+              i class="fa fa-envelope"
+            input.form-control placeholder="Email address" name="EMAIL"
+          
+
+          div style="position: absolute; left: -5000px;"
+            input type="text" name="b_a6d951be52ca9178407f4b2aa_951c0a650e" tabindex="-1" value=""
+        .form-group
+          input.button.btn.btn-primary type="submit" value="Subscribe" name="subscribe"
+    div.col-sm-5.number-of-subscribers.centertext
+      h3 Number of Subscribers
+      h3.number 132
+    div.col-sm-1
