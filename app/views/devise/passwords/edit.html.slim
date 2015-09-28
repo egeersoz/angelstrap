@@ -1,0 +1,31 @@
+.container
+  .row
+  div class="col-md-4 col-md-offset-4 form"
+    h2 Change your password
+
+    = form_for(resource, as: resource_name, url: unlock_path(resource_name), html: {method: :put}) do |f|
+
+    = devise_error_messages!
+
+    = f.hidden_field :reset_password_token
+
+    .form-group
+
+      br
+      .input-group
+      span.input-group-addon
+        i class="fa fa-key"
+        = f.password_field :password, class: "form-control", placeholder: "New password", autocomplete: "off"
+
+      br
+      .input-group
+      span.input-group-addon
+        i class="fa fa-key"
+        = f.password_field :password_confirmation, class: "form-control", placeholder: "Confirm new password", autocomplete: "off"
+
+    .form-group
+        = f.submit "Change password", class: "btn btn-success"
+  
+    hr.quarter-rule
+    = render "devise/shared/links"
+    br

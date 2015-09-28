@@ -1,5 +1,33 @@
 Rails.application.routes.draw do
 
+  get 'listings/new'
+
+  get 'listings/create'
+
+  get 'listings/edit'
+
+  get 'listings/update'
+
+  get 'listings/show'
+
+  get 'listings/index'
+
+  get 'listings/delete'
+
+  get 'companies/new'
+
+  get 'companies/create'
+
+  get 'companies/edit'
+
+  get 'companies/update'
+
+  get 'companies/index'
+
+  get 'companies/show'
+
+  get 'companies/delete'
+
   get 'home/index'
 
   root to: 'home#index'

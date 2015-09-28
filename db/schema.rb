@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150927001331) do
+ActiveRecord::Schema.define(version: 20150927224221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "name"
+    t.string   "dba"
+    t.string   "location"
+    t.string   "website"
+    t.integer  "founder_id"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "listings", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "company_id"
+    t.text     "description"
+    t.integer  "cost"
+    t.string   "currency"
+    t.string   "cost_type"
+    t.integer  "service_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -27,11 +50,20 @@ ActiveRecord::Schema.define(version: 20150927001331) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "failed_attempts",        default: 0,  null: false
+    t.string   "unlock_token"
+    t.datetime "locked_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
 
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
 end

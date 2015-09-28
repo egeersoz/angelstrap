@@ -48,6 +48,16 @@ Rails.application.configure do
   # when problems arise.
   config.log_level = :debug
 
+  config.action_mailer.default_url_options = { host: 'https://fierce-badlands-3016.herokuapp.com/' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: "587",
+    domain: "herokuapp.com",
+    user_name: ENV['MANDRILL_USERNAME'],
+    password: ENV['MANDRILL_API_KEY']
+  }
+
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
