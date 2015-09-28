@@ -1,1 +1,19 @@
-p test
+provide :title, 'Home'
+
+div.container
+  h1 Home Page
+  p This is the home page where people can register their companies and create listings.
+  br
+  a.btn.btn-lg.btn-primary href="#{companies_new_path}" Register Startup
+
+  a.btn.btn-lg.btn-primary href="#{listings_new_path}" Create Listing
+
+  h3 Popular Listings
+  div.row
+    div.col-sm-4.centertext.listing-thumb Listing 1
+    div.col-sm-4.centertext.listing-thumb Listing 2
+    div.col-sm-4.centertext.listing-thumb Listing 3
+  div.row
+    div.col-sm-4.centertext.listing-thumb Listing 4
+    div.col-sm-4.centertext.listing-thumb Listing 5
+    div.col-sm-4.centertext.listing-thumb Listing 6
